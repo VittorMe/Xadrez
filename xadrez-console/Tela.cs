@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic ;
+using System.Collections.Generic;
 using tabuleiro;
 using xadrez;
 namespace xadrez_console
@@ -15,6 +15,8 @@ namespace xadrez_console
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+            if (partida.xeque)
+                Console.WriteLine("VOCÊ ESTÁ EM XEQUE!");
         }
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
         {
@@ -34,7 +36,7 @@ namespace xadrez_console
             Console.Write("[");
             foreach (Peca x in conjunto)
             {
-                Console.Write(x + " ");                
+                Console.Write(x + " ");
             }
             Console.Write("]");
         }
