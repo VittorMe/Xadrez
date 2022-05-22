@@ -6,7 +6,24 @@ namespace xadrez_console
 {
     class Tela
     {
-
+        public static void ImprimirApresentacao()
+        {
+            Console.WriteLine("╔════════════════════════════╗");
+            Console.WriteLine("║       JOGO DE XADREZ       ║");
+            Console.WriteLine("║  EXPLICATIVO DE CADA PEÇA  ║");
+            Console.WriteLine("║                            ║");
+            Console.WriteLine("║        'P' = PEÃO          ║");
+            Console.WriteLine("║        'T' = TORRE         ║");
+            Console.WriteLine("║        'C' = CAVALO        ║");
+            Console.WriteLine("║        'B' = BISPO         ║");
+            Console.WriteLine("║        'D' = DAMA          ║");
+            Console.WriteLine("║        'R' = REI           ║");
+            Console.WriteLine("║                            ║");
+            Console.WriteLine("║                            ║");            
+            Console.WriteLine("║     ENTER PARA INICIAR     ║");
+            Console.WriteLine("╚════════════════════════════╝");
+            Console.ReadLine();
+        }
         public static void imprimirPartida(PartidaDeXadrez partida)
         {
             imprimirTabuleiro(partida.tab);
