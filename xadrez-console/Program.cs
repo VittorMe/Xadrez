@@ -8,6 +8,7 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
+           
             try
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
